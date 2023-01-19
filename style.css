@@ -1,0 +1,89 @@
+body {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.centralizer {
+  position: absolute;
+  height: 70vh;
+  width: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.content-organizer {
+  display: flex;
+  justify-content: left;
+  height: 70vh;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.sedans {
+  background-color: hsl(31, 77%, 52%);
+}
+
+.suvs {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+  background-color: hsl(179, 100%, 13%);
+}
+
+.category {
+  padding: 4vw;
+}
+
+.category-title {
+  font-family: "Big Shoulders Display", cursive;
+  color: #ffffff;
+}
+
+.category-description {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  color: hsla(0, 0%, 100%, 0.75);
+  height: 15vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn-title {
+  font-family: "Lexend Deca", sans-serif;
+  color: hsl(193, 100%, 96%);
+  background-color: hsl(0, 0%, 95%);
+  border-radius: 25px;
+  border-style: solid;
+  padding: 2vh 5vw;
+}
+
+@media (max-width: 375px) {
+  .centralizer {
+    padding-top: 10vh;
+    height: 220vh;
+    left: 0%;
+    top: 0%;
+    transform: none;
+  }
+
+  .content-organizer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .category {
+    padding: 8vw;
+  }
+
+  .category-description {
+    height: auto;
+  }
+}
